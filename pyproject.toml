@@ -1,0 +1,21 @@
+[project]
+name = "fridump3"
+version = "1.0.0"
+description = "A universal memory dumper using Frida for Python 3."
+license = {text = "GPL-3.0-or-later"}
+readme = "README.md"
+requires-python = ">=3.7,<4.0"
+dependencies = [
+    "frida",
+    "loguru"
+]
+
+[project.urls]
+repository = "https://github.com/rootbsd/fridump3"
+
+[project.scripts]
+fridump3 = 'fridump3.console:run'
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
