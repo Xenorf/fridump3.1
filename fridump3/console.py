@@ -101,7 +101,7 @@ def MENU():
     args = parser.parse_args()
     return args
 
-
+@logger.catch
 def run() -> None:
     print(logo)
 
