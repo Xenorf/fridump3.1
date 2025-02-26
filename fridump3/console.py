@@ -28,9 +28,9 @@ def set_log_level(level, output_file):
         level -- the log level to display (default "info")
         output_file -- the file used to output logs, including commands
     """
+    logger.remove()  # Remove any default handlers
     if level.upper() != "NONE":
         LOG_FORMAT = "<green>{time:YYYY-MM-DD HH:mm:ss.SSS}</green> | <level>{level: <8}</level> | <level>{message}</level>"
-        logger.remove()  # Remove any default handlers
         logger.add(sys.stderr, format=LOG_FORMAT, level=level.upper())
         if output_file:
             logger.debug(f"Initializing logfile")
