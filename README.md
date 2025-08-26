@@ -12,8 +12,8 @@ Fridump is an open source memory dumping tool, primarily aimed to penetration te
 Simply run one of the following commands:
 > :warning: pipx is recommended for system or user wide installations
 ```
-pipx install git+https://github.com/Xenorf/fridump3
-pip install git+https://github.com/Xenorf/fridump3
+pipx install fridump3
+pip install fridump3
 ```
 
 ## Usage
