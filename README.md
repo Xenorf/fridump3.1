@@ -1,23 +1,23 @@
-# fridump3
+# fridump3.1
 
 Fridump is an open source memory dumping tool, primarily aimed to penetration testers and developers. Fridump is using the Frida framework to dump accessible memory addresses from any platform supported. It can be used from a Windows, Linux or Mac OS X system to dump the memory of an iOS, Android or Windows application.
 
-## Fork information
+## Requirements
 
-This project is based on the following project: [https://github.com/Nightbringer21/fridump](https://github.com/Nightbringer21/fridump) and the pending PR concerning the python3 support (especially from [georgepetz](https://github.com/georgepetz) . Additionally I added the network support in addition to the USB support.
-
-FYI: I will destroy this repo is the Fridump author will integrate the pending PR concerning Python3 support.
+- **Python** 3.7+
+- **Frida** 17+
 
 ## Installation
 
 Simply run one of the following commands:
 > :warning: pipx is recommended for system or user wide installations
 ```
-pipx install git+https://github.com/rootbsd/fridump3
-pip install git+https://github.com/rootbsd/fridump3
+pipx install git+https://github.com/Xenorf/fridump3
+pip install git+https://github.com/Xenorf/fridump3
 ```
 
 ## Usage
+
 ---
 
 ```
@@ -27,7 +27,7 @@ usage: fridump3 [-h] [-o dir] [-u] [-H HOST] [-r] [-s] [--max-size bytes]
                 process
 
 positional arguments:
-  process               the process that you will be injecting to
+  process               the process name, not package name that you will be injecting to
 
 options:
   -h, --help            show this help message and exit
